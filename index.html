@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="packery-docs.min.js"></script>
+    <script src="node_modules/html2canvas/dist/html2canvas.js"></script>
+    <script src="jquery-ui.js"></script>
+    <script src="jquery-drag-drop-plugin.js"></script>
+    <!-- <script src="node_modules/packery/dist/packery.pkgd.min.js"></script> -->
+    <script src="script.js"></script>
+    <title>Drag element</title>
+</head>
+<body>
+    <div class="color">
+        <div class="vpc-color metal-drag blue" data-color="blue" id="size-4x4" data-size="4x4" draggable="true">4x4</div>
+        <div class="vpc-color metal-drag yellow" data-color="yellow" id="size-4x8" data-size="4x8" draggable="true">4x8</div>
+        <div class="vpc-color metal-drag dark" data-color="black" id="size-4x16" data-size="4x16" draggable="true">4x16</div>
+    </div>
+
+    <div class="container">
+        <h1>DRAG ON GRID</h1>
+        <div class="drop-targets" draggable="false" id="drag1"></div>
+
+        <div class="drop-targets" draggable="false" id="drageee"></div>
+    </div>
+    <div id="clonner"></div>
+
+    <button id="print-sc">Print</button>
+
+</body>
+</html>
